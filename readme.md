@@ -4,6 +4,18 @@ A *full-stack Sweet Shop Management System* built using the *MERN stack, support
 The project follows *Test-Driven Development (TDD)* and *clean coding best practices*, ensuring scalability, maintainability, and production readiness.
 
 ---
+## 🌐 Live Demo
+
+| Platform | URL |
+|----------|-----|
+| *Frontend* | [## 🌐 Live Demo
+
+| Platform | URL |
+|----------|-----|
+| *Frontend* | [https://sweet-shop-yt38.vercel.app](https://sweet-shop-yt38.vercel.app) |
+| *Backend API* | [https://sweet-shop-swart.vercel.app/api/health](https://sweet-shop-swart.vercel.app/api/health) | 
+
+---
 
 ## 📌 Features
 
@@ -37,6 +49,31 @@ The project follows *Test-Driven Development (TDD)* and *clean coding best pract
 * Stock restocking
 * Sweet CRUD operations
 * Role-based UI rendering
+
+---
+
+## Screenshots
+
+### Home Page
+![Home Page](./screenshots/HomePage.png)
+### Login Page
+![Login Page](./screenshots/LoginPage.png)
+### Create the account Page 
+![Create the account Page](./screenshots/CreatetheaccountPage.png)
+### User Login Page
+![User Login Page](./screenshots/UserloginedSuccessfully.png)
+### Admin Login Page
+![Admin login Page](./screenshots/AdminloginSuccessfully.png)
+### Admin Panel
+![Admin Panel Page](./screenshots/AdminPanel.png)
+### Adding the Sweets Page
+![Adding the sweets Page](./screenshots/AddingtheSweets.png)
+### Restock
+![Restock](./screenshots/Restock.png)
+### User Dashboard Page
+![User Dashboard Page](./screenshots/UserDashboard.png)
+### Puchasing the sweets
+![User Purchasing](./screenshots/PurchasingSweets.png)
 
 ---
 

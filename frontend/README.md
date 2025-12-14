@@ -1,16 +1,71 @@
-# React + Vite
+# 🍬 Sweet Shop Management System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** repository/part of the full-stack Sweet Shop Management System built with the **MERN stack**. It provides a responsive, role-based user interface for browsing sweets, purchasing, and admin management features. Authentication state and API communication are handled securely and efficiently.
 
-Currently, two official plugins are available:
+## 📌 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 👤 Authentication & Authorization
+- User registration and login forms
+- JWT token storage (secure httpOnly cookies or context-based management)
+- Protected routes using React Router
+- Role-based UI rendering (`USER` vs `ADMIN`)
+- Automatic redirection for unauthorized access
+- Secure logout (token clearance)
 
-## React Compiler
+### 🍭 Sweet Management (User View)
+- Browse all available sweets in a grid/card layout
+- Search sweets by name
+- Filter by category and price range
+- View detailed sweet information
+- Purchase sweets with real-time stock validation feedback
+- Success/error notifications for purchases
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🧑‍💼 Admin Dashboard
+- Dedicated admin panel accessible only to ADMIN role
+- CRUD operations for sweets:
+  - Add new sweet (with form validation)
+  - Edit existing sweet details
+  - Delete sweet
+  - Restock inventory (update quantity)
+- Responsive tables/lists for inventory overview
 
-## Expanding the ESLint configuration
+### 🔔 Additional UI/UX Features
+- Loading states and spinners
+- Toast notifications for actions (success, error, info)
+- Responsive design (mobile-friendly with Tailwind CSS)
+- Context API for global state management (auth, user role)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- **React** (with Vite for fast development)
+- **Tailwind CSS** for styling
+- **Axios** for API requests
+- **React Router v6** for client-side routing and protected routes
+- **Context API** for authentication and global state
+- Optional: React Toastify or custom toast components
+
+## 🗂 Project Structure
+frontend/
+├── src/
+│   ├── components/          # Reusable UI components (Navbar, SweetCard, etc.)
+│   ├── pages/               # Page components (Home, Login, Register, AdminDashboard, etc.)
+│   ├── context/             # AuthContext and other providers
+│   ├── api/                 # Axios instance and API endpoint functions
+│   ├── assets/              # Images, icons, etc.
+│   ├── App.jsx              # Main app with routes
+│   └── main.jsx             # Entry point
+├── public/                  # Static assets
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
+
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher recommended)
+- The backend server running at `http://localhost:3000` (or your configured URL)
+
+### Installation
+```bash
+cd frontend
+npm install
